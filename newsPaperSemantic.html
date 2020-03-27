@@ -8,112 +8,15 @@
     <noscript>Your are lucky and use it without any Java Script</noscript>
     <meta name="description"
           content="The latest news from all over the world">
-    <style>
-        body {
-            margin: 0px;
-        }
-
-        main {
-            display: flex;
-            width: 60%;
-        }
-
-        body>footer {
-            text-align: center;
-            background: #fafafa;
-            margin: 30px 0 0;
-            padding: 10px 0;
-            border: 1px solid lightgrey;
-        }
-
-        article {
-            background: #fafafa;
-            margin: 5px;
-            padding: 5px;
-            border: 1px solid lightgrey;
-        }
-
-        ul {
-            list-style-type: none;
-            display: flex;
-        }
-        ul > li {
-            padding: 5px 10px;
-        }
-
-        .main-header {
-            display: flex;
-            justify-content: space-between;
-            margin: 0 0 30px;
-            padding: 10px 50px 10px;
-            background: #fafafa;
-            border: 1px solid lightgrey;
-        }
-
-        .main-header a {
-            font-size: 20px;
-            text-decoration: none;
-            transition: all .2s ease-in-out;
-        }
-
-        .main-header a:hover {
-            text-decoration: underline;
-            color: black;
-        }
-
-        .selected {
-            text-decoration: underline;
-            color: dimgray;
-        }
-
-        .news {
-            margin: 50px 30px 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        .news-secondary {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-
-        figure {
-            margin: 0 auto;
-            padding: 5px;
-        }
-
-        figure img {
-            width: 100%;
-        }
-
-        .ad {
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-            align-items: center;
-            outline: 3px dotted lightgreen;
-        }
-
-        .ad img {
-            width: 95%;
-            margin: 0 auto;
-        }
-
-        a, a:visited {
-            text-decoration: underline;
-            color: lightcoral;
-        }
-    </style>
-
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Permanent+Marker|Roboto:300,400&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <header class="main-header" role="banner">
-    <h1>Best newspaper</h1>
+    <h1 class="logo">Best newspaper</h1>
     <nav role="navigation">
-        <ul>
+        <ul class="header-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">Latest</a></li>
             <li class="selected"><a href="#">Gear</a></li>
@@ -274,13 +177,13 @@
                 its regular $500 retail price.
             </p>
             <footer>
-                <p>by Will Price</p>
+                <p>by <a href="#">Will Price</a></p>
                 <address>
                     Will Price is Gear Patrol's home and drinks editor. He's from Atlanta and lives in Brooklyn. He's
                     interested in bourbon, houseplants, cheap Japanese pens, and cast-iron skillets — maybe a little too
                     much.
 
-                    <a href="Will Price">More by Will Price</a> | Follow on Contact via <a
+                    <a href="#">More by Will Price</a> | Follow on Contact via <a
                         href="mailto: mail@google.com">Email</a>
                 </address>
             </footer>
@@ -294,11 +197,13 @@
     </section>
 </div>
 <footer role="contentinfo">
-    <p><small>&copy; all rights reserved</small></p>
-    <p><b>The Best Newspaper</b></p>
-    <p>03129, Petropavlivska Borshagivka, <br> Soffivsky lane 18</p>
-    <p><a href="tel: +380638289858">tel: 06362989858</a></p>
-    <p><a href="mailto: sukhanov.stas@gmail.com" target="_blank">email: sukhanov.stas@gmail.com</a></p>
+    <div>
+        <p><small>&copy; all rights reserved</small></p>
+        <p><b>The Best Newspaper</b></p>
+        <p>03129, Petropavlivska Borshagivka, <br> Soffivsky lane 18</p>
+        <p><a href="tel: +380638289858">tel: 06362989858</a></p>
+        <p><a href="mailto: sukhanov.stas@gmail.com" target="_blank">email: sukhanov.stas@gmail.com</a></p>
+    </div>
 </footer>
 </body>
 </html>
